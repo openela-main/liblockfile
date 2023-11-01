@@ -1,6 +1,6 @@
 Name:           liblockfile
 Version:        1.14
-Release:        9%{?dist}
+Release:        10%{?dist}
 Summary:        This implements a number of functions found in -lmail on SysV systems
 
 # regarding license please see file COPYRIGHT
@@ -68,6 +68,9 @@ ldconfig -N -n %{buildroot}/%{_libdir}
 
 
 %changelog
+* Wed Aug 10 2022 Zdenek Dohnal <zdohnal@redhat.com> - 1.14-10
+- 2112377 - move liblockfile to BaseOS
+
 * Mon Aug 09 2021 Mohan Boddu <mboddu@redhat.com> - 1.14-9
 - Rebuilt for IMA sigs, glibc 2.34, aarch64 flags
   Related: rhbz#1991688
