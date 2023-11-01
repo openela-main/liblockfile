@@ -1,6 +1,6 @@
 Name:           liblockfile
 Version:        1.14
-Release:        2%{?dist}
+Release:        1%{?dist}
 Summary:        This implements a number of functions found in -lmail on SysV systems
 
 Group:          Applications/System
@@ -69,9 +69,6 @@ ldconfig -N -n %{buildroot}/%{_libdir}
 
 
 %changelog
-* Wed Aug 10 2022 Zdenek Dohnal <zdohnal@redhat.com> - 1.14-2
-- 2112380 - move liblockfile to BaseOS
-
 * Thu Mar 08 2018 Matthias Runge <mrunge@redhat.com> - 1.14-1
 - update to 1.14 (rhbz#1548753)
 - fixed build flags injection (rhbz#1548706)
